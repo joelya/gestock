@@ -1,0 +1,31 @@
+/* CSS gérant le style de la liste des suggestions */
+ul#suggestsList{
+	
+	position: absolute;
+    z-index: 1000;
+    cursor: default;
+    padding: 0;
+    margin-top: 20px;
+	width: 200px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+	ul#suggestsList li{
+ padding: 3px 30px;
+	}
+	ul#suggestsList li:hover, ul#suggestsList li#selectedSuggest{
+		background-color: #DDD;
+	}
+		ul#suggestsList li a{
+			display: block;
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
